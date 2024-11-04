@@ -1,0 +1,21 @@
+  6496:20240827:170108.922 Zabbix Agent stopped. Zabbix 6.0.0 (revision 5203d2ea7d).
+  8380:20240827:170109.251 Starting Zabbix Agent [DESKTOP-AFU5QIV]. Zabbix 6.0.0 (revision 5203d2ea7d).
+  8380:20240827:170109.251 **** Enabled features ****
+  8380:20240827:170109.252 IPv6 support:          YES
+  8380:20240827:170109.252 TLS support:           YES
+  8380:20240827:170109.252 **************************
+  8380:20240827:170109.253 using configuration file: C:\Zabbix\zabbix_agent-6.0.0-windows-amd64-openssl\conf\zabbix_agentd.conf
+  8380:20240827:170109.730 agent #0 started [main process]
+  7048:20240827:170109.731 agent #1 started [collector]
+  5400:20240827:170109.732 agent #2 started [listener #1]
+  8420:20240827:170109.732 agent #3 started [listener #2]
+  1748:20240827:170109.734 agent #4 started [listener #3]
+  3952:20240827:170109.734 agent #5 started [active checks #1]
+  3952:20240827:170109.740 no active checks on server [172.19.50.125:10051]: host [DESKTOP-AFU5QIV] not found
+  3952:20240827:170309.154 no active checks on server [172.19.50.125:10051]: host [DESKTOP-AFU5QIV] not found
+  3952:20240827:170509.529 no active checks on server [172.19.50.125:10051]: host [DESKTOP-AFU5QIV] not found
+  3952:20240827:170709.913 no active checks on server [172.19.50.125:10051]: host [DESKTOP-AFU5QIV] not found
+  3952:20240827:170909.260 no active checks on server [172.19.50.125:10051]: host [DESKTOP-AFU5QIV] not found
+  5400:20240827:175449.119 Failed to execute command "powershell -Command "Get-Content C:\Zabbix\Logs\pje_2_log.txt | Select-String 'DownloadSpeed=' | Select-Object -Last 1 | ForEach-Object { $_.ToString().Split('=')[1] }"": Timeout while executing a shell script.
+  1748:20240827:175449.283 Failed to execute command "powershell -Command "Get-Content C:\Zabbix\Logs\pje_2_log.txt | Select-String 'Latency=' | Select-Object -Last 1 | ForEach-Object { $_.ToString().Split('=')[1] }"": Timeout while executing a shell script.
+  8420:20240827:175450.281 Failed to execute command "powershell -Command "Get-Content C:\Zabbix\Logs\pje_2_log.txt | Select-String 'Status=' | Select-Object -Last 1 | ForEach-Object { $_.ToString().Split('=')[1] }"": Timeout while executing a shell script.

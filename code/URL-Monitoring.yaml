@@ -1,0 +1,76 @@
+zabbix_export:
+  version: '6.0'
+  date: '2024-08-27T19:22:59Z'
+  groups:
+    - uuid: aa843a296f634e9581a13d996da3b10e
+      name: URL-Monitoring
+  templates:
+    - uuid: 845510939b0940e89958b58da4274af6
+      template: Google-UOL-URL
+      name: Google-UOL-URL
+      description: 'Validação da latência, velocidade de download e código de resposta para Google e UOL.'
+      groups:
+        - name: URL-Monitoring
+      items:
+        - uuid: c8165a84eacb496597ae0f9c5a6a81e5
+          name: log_google
+          key: log.lastline.google
+          trends: '0'
+          status: DISABLED
+          value_type: LOG
+          tags:
+            - tag: URL
+              value: 'Google'
+        - uuid: ab271f2b6b56469aa7c6725aa699e2c1
+          name: log_uol
+          key: log.lastline.uol
+          trends: '0'
+          status: DISABLED
+          value_type: LOG
+          tags:
+            - tag: URL
+              value: 'UOL'
+        - uuid: 172cabe85e364b799d55be4e035a2ecd
+          name: 'Google - Velocidade de Download'
+          key: google.downloadspeed
+          value_type: FLOAT
+          units: KB/s
+          tags:
+            - tag: URL
+              value: 'Google'
+        - uuid: 6fd3c7d7f7174d618f604d760228e1d4
+          name: 'Google - Latência'
+          key: google.latency
+          value_type: FLOAT
+          units: ms
+          tags:
+            - tag: URL
+              value: 'Google'
+        - uuid: 13435184c9904f82b34bbdea95ca4635
+          name: 'Google - Status'
+          key: google.status
+          tags:
+            - tag: URL
+              value: 'Google'
+        - uuid: 85d9c47444634c7ea1d27b40aab7d73f
+          name: 'UOL - Velocidade de Download'
+          key: uol.downloadspeed
+          value_type: FLOAT
+          units: KB/s
+          tags:
+            - tag: URL
+              value: 'UOL'
+        - uuid: 7d2985333fd14fe1adc382203286bb86
+          name: 'UOL - Latência'
+          key: uol.latency
+          value_type: FLOAT
+          units: ms
+          tags:
+            - tag: URL
+              value: 'UOL'
+        - uuid: 335e22668a964193827ff9e469b02a11
+          name: 'UOL - Status'
+          key: uol.status
+          tags:
+            - tag: URL
+              value: 'UOL'
